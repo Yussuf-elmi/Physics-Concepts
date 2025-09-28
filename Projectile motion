@@ -37,6 +37,7 @@ Space Science – Space agencies calculate trajectories when landing rovers or s
 
 Visualization
 Projectile motion can be plotted with math:
+Install (matplotlib and numpy) libraries:
 
 import matplotlib.pyplot as plt
 import numpy as np
