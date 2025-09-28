@@ -1,0 +1,64 @@
+Projectile Motion
+Projectile motion is the curved path an object follows when it’s thrown, launched, or fired into the air, and the only forces acting on it (ideally) are gravity and air resistance (though in simple physics we often ignore air).
+
+Horizontal motion: Once launched, the object keeps moving forward at a constant speed.
+
+Vertical motion: Gravity is always pulling it downward, accelerating it at about 9.8 m/s² on Earth.
+
+The combination of these two creates the famous parabolic curve.
+
+Equations:
+
+Horizontal distance = speed × time
+
+Vertical position = initial height + initial vertical speed × time – ½ × g × t²
+
+Real-World Examples
+
+Sports – A football kicked, a basketball shot, a javelin thrown.
+
+Military & Defense – Arrows, bullets, missiles, or cannonballs need trajectory calculations.
+
+Water fountains – Streams of water arcs follow projectile paths.
+
+Space launches – Rockets in early stages behave like projectiles before their engines adjust trajectory.
+
+Connection to Technology
+
+Computer Simulations & Games – Video games use projectile motion equations to simulate realistic arcs.
+
+Engineering – Civil engineers consider projectile motion when designing water fountains, ski jumps, or roller coasters.
+
+Military Tech – Ballistics software predicts projectile paths under wind, air drag, and Earth’s curvature.
+
+Robotics & AI – Drones and robots use predictive models to throw, catch, or avoid objects.
+
+Space Science – Space agencies calculate trajectories when landing rovers or sending spacecraft into orbit.
+
+Visualization
+Projectile motion can be plotted with math:
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+v0 = 25  
+angle = 45  
+g = 9.8  
+
+theta = np.radians(angle)
+t_flight = 2 * v0 * np.sin(theta) / g
+t = np.linspace(0, t_flight, 100)
+
+x = v0 * np.cos(theta) * t
+y = v0 * np.sin(theta) * t - 0.5 * g * t**2
+
+plt.figure(figsize=(8,5))
+plt.plot(x, y, label="Projectile Path", color="darkblue")
+plt.title("Projectile Motion (v0=25 m/s, angle=45°)", fontsize=14)
+plt.xlabel("Horizontal Distance (m)")
+plt.ylabel("Vertical Height (m)")
+plt.axhline(0, color="black", linewidth=0.8)
+plt.legend()
+plt.grid(True)
+
+plt.show()
