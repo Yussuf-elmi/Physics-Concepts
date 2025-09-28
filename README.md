@@ -38,4 +38,4 @@ This repository is a collection of explorations where **physics and mathematics 
 "Physics and Math are the blueprints of Technology"
 “The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life.” — Bill Gates
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+  git clone  https://github.com/Yussuf-elmi/Physics-Concepts.git
